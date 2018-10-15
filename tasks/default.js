@@ -13,9 +13,7 @@ gulp.task('default', () => (
 	runSequence(
 		[
 			'styles:dependencies',
-			'templates',
-			'scripts',
-
+			'templates'
 		],
 		'server',
 		'watch'

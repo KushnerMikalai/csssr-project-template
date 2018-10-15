@@ -5,6 +5,19 @@ clearfix()
 		clear both
 		content ''
 
+/// media
+below($width)
+	@media screen and (max-width: $width - 1)
+		{block}
+
+above($width)
+	@media screen and (min-width: $width)
+		{block}
+
+between($minWidth, $maxWidth)
+	@media screen and (min-width: $minWidth) and (max-width: $maxWidth - 1)
+		{block}
+
 // Fix no working `-webkit-text-size-adjust: 100%;` in Android.
 fix-text-size-adjust()
 	background-image linear-gradient(transparent, transparent)

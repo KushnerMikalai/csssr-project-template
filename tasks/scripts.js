@@ -41,5 +41,4 @@ gulp.task('scripts', () => (
 
 
 gulp.task('scripts-libs', runWebpack(false));
-
-gulp.task('scripts:watch', runWebpack(true));
+gulp.task('scripts-libs:watch', runWebpack(true));
