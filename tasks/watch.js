@@ -12,6 +12,7 @@ gulp.task('watch', () => {
 	watch('app/{styles,blocks}/**/*.styl', () => {
 		runSequence(['styles', 'styles:lint'], () => bs.reload('assets/styles/app.min.css'));
 	});
+	watch(['app/images/**/*'], () => runSequence('images', bs.reload));
 	watch(['app/scripts/app.js'], () => runSequence('scripts', bs.reload));
 	watch(['app/{pages,blocks}/**/*.jade'], () => runSequence('templates', bs.reload));
 	watch('app/resources/**/*', () => runSequence('copy', bs.reload));
