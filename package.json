@@ -1,6 +1,6 @@
 {
   "name": "csssr-project-template",
-  "version": "0.26.2",
+  "version": "0.26.3",
   "description": "A template for a quick start.",
   "keywords": [
     "csssr-project-template",
@@ -55,7 +55,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@fancyapps/fancybox": "^3.5.2",
     "autoprefixer-stylus": "^0.9.0",
     "babel": "^6.5.0",
     "babel-cli": "^6.5.0",
@@ -82,6 +81,7 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.1.0",
     "gulp-if": "^2.0.0",
+    "gulp-image": "^4.3.0",
     "gulp-jade": "^1.1.0",
     "gulp-jade-inheritance": "^0.5.3",
     "gulp-jsbeautifier": "^1.0.1",
