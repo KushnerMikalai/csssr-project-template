@@ -26,7 +26,6 @@ yarn install
 npm start
 ```
 
-
 ## Команды для запуска
 
 ### Запуск с отслеживанием изменений
@@ -102,11 +101,12 @@ npm run deploy
 │   ├── pages/                 # Страницы
 │   │   └── index.jade         # Разметка страницы
 │   ├── icons/                 # SVG иконки для генерации векторного спрайта
+│   ├── images/                # Картинки для проекта (ужимаются)
 │   ├── sprites/               # PNG иконки для генерации растрового спрайта
 │   ├── resources/             # Статические файлы для копирования в dist
 │   ├── scripts/               # Скрипты
 │   │   ├── app.js             # Главный скрипт
-│   │   └── libs.js            # Скрипты библиотек 
+│   │   └── libs.js            # Скрипты библиотек
 │   └── styles/                # Стили
 │       ├── helpers/           # Помощники
 │       │   ├── fonts.styl     # Подключение шрифтов
@@ -233,5 +233,3 @@ npm run deploy
     height: 24px;
 }
 ```
-
-## [Внеси свой вклад в развитие проекта!](https://github.com/CSSSR/csssr-project-template/blob/master/contributing.md)
