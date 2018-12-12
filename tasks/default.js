@@ -1,32 +1,33 @@
 import runSequence from 'run-sequence';
 import gulp from 'gulp';
 
-gulp.task('styles:dependencies', () => (
+gulp.task('styles:dependencies', () =>
 	runSequence(
 		'sprites',
 		'icons',
 		'styles',
-		'images'
+		'scripts'
 	)
-));
+);
 
-gulp.task('default', () => (
+gulp.task('default', () =>
 	runSequence(
 		[
 			'styles:dependencies',
 			'templates'
 		],
-		'server',
-		'watch'
+			'images',
+			'server',
+			'watch'
 	)
-));
+);
 
-gulp.task('build', () => (
+gulp.task('build', () =>
 	runSequence(
 		'styles:dependencies',
+		'imagesBuild',
 		'scripts-libs',
-		'scripts',
 		'copy',
 		'templates'
 	)
-));
+);

@@ -21,7 +21,7 @@ function runWebpack(watch = false) {
 			const jsonStats = stats.toJson();
 			if (jsonStats.errors.length) {
 				jsonStats.errors.forEach(message => {
-					scriptsErrorHandler.call({emit() {/* noop */}}, {message});
+					scriptsErrorHandler.call({emit() {/* noop */ }}, {message});
 				});
 			}
 			statsLogger(error, stats);
@@ -38,7 +38,6 @@ gulp.task('scripts', () => (
 	gulp.src('app/scripts/app.js')
 		.pipe(gulp.dest('dist/assets/scripts'))
 ));
-
 
 gulp.task('scripts-libs', runWebpack(false));
 gulp.task('scripts-libs:watch', runWebpack(true));
